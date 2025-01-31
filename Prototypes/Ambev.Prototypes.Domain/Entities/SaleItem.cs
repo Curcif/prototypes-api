@@ -21,6 +21,7 @@
         public void ApplyDiscount(decimal discount)
         {
             Discount = discount;
+            TotalPrice = Quantity * UnitPrice * (1 - Discount);
         }
     }
 }
